@@ -1,5 +1,6 @@
 # easy-pay-frontend
 
+As the FinTech sector keeps growing everyday, I though it would be nice to jump right in and start exploring its ins and outs by creating a platform where people can send and recive money from friends.
 
 ## Wireframes
 
