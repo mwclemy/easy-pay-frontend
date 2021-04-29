@@ -15,3 +15,7 @@ As the FinTech sector keeps growing everyday, I though it would be nice to jump 
 ![page 5](./assets/Page_5.png)
 
 ![page 6](./assets/Page_6.png)
+
+
+## ERD
+![erd](./assets/erd.png)
