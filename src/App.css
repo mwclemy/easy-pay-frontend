@@ -1,10 +1,234 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home p {
+  text-align: start;
+  margin-left: 50px;
+  font-size: 2.5em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  margin: 20px;
+  font-family: 'Monoton', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.heart {
+  color: red;
+}
+
+.navBar {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.navBar img {
+  height: 90px;
+  width: 150px;
+}
+
+.navBar ul {
+  list-style-type: none;
+}
+
+.navBar li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.searchReciever {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.searchReciever li, .searchReciever li.added {
+  background-color: #ccc;
+  margin-bottom: 2px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+
+.searchReciever li.added:after {
+  content: '✓';
+  color: #00d64f;
+}
+
+
+
+.banking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.userCash {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.amount {
+  font-size: 2em;
+  color: #00d64f;
+  font-weight: bold;
+}
+.amount input {
+  border-style: none;
+  outline: none;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #00d64f;
+  font-weight: bold;
+}
+
+.formGroup {
+  margin: 20px 0;
+}
+.formGroup input, .receiver {
+  padding: .8em;
+  width: 300px;
+}
+
+.receiver {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    display: flex;
+    align-items: center;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.receiver input {
+  border-style: none;
+  outline: none;
+  padding: 0;
+}
+.groupButtons {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+}
+.customButton {
+  width: 80px;
+  height: 50px;
+  letter-spacing: 0.2rem;
+  background-color: #ccc;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customButton:focus {
+  outline: none;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button:focus {
+  outline: none;
+}
+.submitButton {
+  color: white;
+  background-color:#00d64f;
+  border: 1.5px solid#00d64f;
+  cursor: pointer;
+}
+.submitButton:focus {
+  outline: none;
+}
+.activity {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: start;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.transactionDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.reason {
+  font-size: .7em;
+}
+
+.active{
+  background-color:#00d64f;
+  border: 1.5px solid#00d64f;
+  outline: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
