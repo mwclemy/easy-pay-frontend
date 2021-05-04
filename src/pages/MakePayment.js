@@ -66,7 +66,9 @@ const MakePayment = () => {
         }
     }
 
-    useEffect(fetchAllUsers, [])
+    useEffect(() => {
+        fetchAllUsers()
+    }, [])
 
     useEffect(() => {
         searchReciever()
