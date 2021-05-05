@@ -20,7 +20,6 @@ const Signup = () => {
     const submitHandler = async (e) => {
         e.preventDefault()
         try {
-            console.log(userInfo)
             const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/users`, userInfo)
             localStorage.setItem('userId', response.data.user.id)
             setUser(response.data.user)
